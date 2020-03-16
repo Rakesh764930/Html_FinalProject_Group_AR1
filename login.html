@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/home.css">
+
+
+    <!--bootstrap reference from https://getbootstrap.com/docs/4.4/getting-started/introduction/-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name= "viewport" content="width=device-width , initial-scale=1.0">
+    <title> About Us </title>
+  </head>
+  <body >
+    <div class="container-fluid">
+
+      <div class="top-bar">
+        <div class="row">
+          <ul class="list-group list-group-horizontal" id="signList">
+
+            <li class="list-group-item"><a href="login.html">Sign In</a></li>
+            <li class="list-group-item"><a href="myList.html">My List</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="secondNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuItems">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" > <a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"> <div class="dropdown">
+              <!-- service submenu -->
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="hotels.html" style="color: black">Book  Hotels </a>
+                <a class="dropdown-item" href="flights.html" style="color: black">Book Flights</a>
+                <a class="dropdown-item" href="trains.html" style="color: black">Train Reservation</a>
+              </div>
+            </div></li>
+            <li class="nav-item"> <a class="nav-link" href="aboutUs.html">About us</a></li>
+            <li class="nav-item"> <a class="nav-link" href="contactUs.html">Contact us</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+      <form class="was-validated login-form" action="index.html" method="post">
+<div class="div1">
+<div class="div2">
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" class="form-control" id="username"  name="username" required>
+
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" id="password"  name="password" required>
+
+            </div>
+
+            <div >
+              <h5>New User?</h5>
+              <button class="btn btn-outline-warning" type="button" onclick="newUser()">Create an account</button>
+
+            </div>
+            <div id="d2">
+              <button type="submit" class="btn btn-outline-success">Log In</button>
+            </div>
+            </div>
+  </div>
+          </form>
+
+
+
+        <form class="was-validated registration-form" action="index.html" method="post">
+          <div class="div1">
+          <div class="div2">
+          <div class="form-group">
+            <label for="fullName">Firstname:</label>
+            <input type="text" class="form-control" name="name" id="fName"  required>
+
+
+          </div>
+          <div class="form-group">
+            <label for="fullName">LastName:</label>
+            <input type="text" class="form-control" name="name" id="lName"  required>
+
+
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" name="email" id="email"  required>
+
+
+          </div>
+          <div class="form-group">
+            <label for="user">Username:</label>
+            <input type="text" class="form-control" id="usname"  name="username" required>
+
+          </div>
+          <div class="form-group">
+            <label for="pswd">Password:</label>
+            <input type="password" class="form-control" id="pswd"  name="password" required>
+
+          </div>
+
+          <div class="form-group">
+            <label for="pswd">Confirm Password:</label>
+            <input type="password" class="form-control" id="cpswd"  name="password" required>
+
+          </div>
+          <div id="d3">
+            <button type="submit" class="btn btn-outline-success">Sign In</button>
+          </div>
+</div>
+</div>
+        </form>
+
+
+
+<footer> follow us on :
+      <a href="https://www.facebook.com/rakeshkumar" class="fa fa-facebook"></a>
+      <a href="https://www.twitter.com/@rakesh25948380" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/rakesh-kumar-na-b20b45194/" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a><br>
+      &copy; Copyright 2020. All Rights Reserved.<br>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/3d7be19efc.js"></script>
+<script >
+  function newUser(){
+document.getElementsByClassName('login-form')[0].style.display = "none";
+document.getElementsByClassName('registration-form')[0].style.display = "block";
+}
+</script>
+  </body>
+
+</html>
